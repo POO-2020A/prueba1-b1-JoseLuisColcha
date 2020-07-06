@@ -31,6 +31,16 @@ class MixedCase {
     Scanner inp = new Scanner(System.in);
     System.out.print("In:");
     String s = inp.nextLine();
-    //write your code below
+    String[] cad = new String[50];
+    for (int i = 0; i < s.length(); i++) {
+        cad[i] = s.substring(i, i + 1);
+        }
+    for (int i = 0; i < s.length(); i++) {
+          if (i % 2 == 0) {
+              System.out.print(cad[i].toLowerCase());
+          } else {
+              System.out.print(cad[i].toUpperCase());
+          }
+      }
   }
 }
